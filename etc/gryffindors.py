@@ -41,7 +41,7 @@ studs = ["hermoine", "harry", "ron"]
 gryffindors2 = []
 
 # dictionary comprehension
-gryffindors3 = [{"name":stud, "house":"Gryffindor"} for stud in studs]
+gryffindors3 = {stud:"Gryffindor" for stud in studs}
 
 print(gryffindors3, 'dictionary comprehension')
 
@@ -52,4 +52,9 @@ for stud in studs:
     
 print('dictionary comprehension: ', gryffindors2)
 
-2:28
+
+
+# adding numbering to  loops 
+
+for i, j in enumerate(range(10)):
+    print(i+1, j)
